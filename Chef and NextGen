@@ -1,0 +1,15 @@
+""" Python Code """
+# First we need to take testCases as Input
+t=int(input())
+
+#For each testCase we need to do some operation so, for each loop is used here
+for i in range(t):
+    #input as per question
+    a,b,x,y = map(int,input().split())
+    if x*y < a*b:
+        #this condition checks if sufficient amount of helium 3 is present on Moon or not? if not print 'NO'
+        print('NO')
+    elif a*b//y <= x:
+        print('YES')
+    else:
+        print('NO')
