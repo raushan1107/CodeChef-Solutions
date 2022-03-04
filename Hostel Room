@@ -1,0 +1,11 @@
+t=int(input())
+for i in range(t):
+    n,x = map(int,input().split())
+    a=list(map(int,input().split()))
+    sum = x
+    ans = x
+    for i in a:
+        sum +=i
+        if sum > ans:
+            ans = sum
+    print(ans)
