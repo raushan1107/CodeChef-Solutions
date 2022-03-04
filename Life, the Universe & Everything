@@ -1,0 +1,8 @@
+a=[]
+while True:
+    ele=int(input())
+    if ele==42:
+        break
+    a.append(ele)
+for i in a:
+    print(i)
