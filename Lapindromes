@@ -1,0 +1,22 @@
+t=int(input())
+l,r=[],[]
+for i in range(t):
+    s = input()
+    if len(s)%2==0:
+        l = list(s[:len(s)//2])
+        r = list(s[len(s)//2:])
+        l.sort()
+        r.sort() 
+        if l == r:
+            print('YES')
+        else:
+            print('NO')
+    else:
+        l = list(s[:len(s)//2])
+        r = list(s[len(s)//2+1:])
+        l.sort()
+        r.sort() 
+        if l == r:
+            print('YES')
+        else:
+            print('NO')
