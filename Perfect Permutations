@@ -1,0 +1,14 @@
+t=int(input())
+for i in range(t):
+    N,K = map(int,input().split())
+    if N==K:
+        for x in range(1,N+1):
+            print(x,end=' ')
+        print()
+    else:
+        print(N-K+1,end=' ')
+        for j in range(1,N-K+1):
+            print(j,end=' ')
+        for j in range(N-K+2,N+1):
+            print(j,end=' ')
+        print()
