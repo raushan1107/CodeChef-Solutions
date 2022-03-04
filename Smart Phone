@@ -1,0 +1,14 @@
+n=int(input())
+a=[]
+for i in range(n):
+    ele=int(input())
+    a.append(ele)
+a.sort()
+maxSum=a[-1]
+sum=0
+for i in range(len(a)):
+    sum = a[i]*(len(a)-i)
+    maxSum = max(maxSum,sum)
+print(maxSum)
+    
+    
