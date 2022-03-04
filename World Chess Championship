@@ -1,0 +1,19 @@
+t=int(input())
+for i in range(t):
+    x=int(input())
+    string = input()
+    arr = list(string)
+    dic={'C':0,'N':0,'D':0}
+    for i in arr:
+        dic[i] = dic.get(i)+1
+    if dic['C'] == dic['N']:
+        print(55*x)
+        continue
+    carlsen_score = 2*dic['C'] + 1*dic['D']
+    chef_score = 2*dic['N'] + 1*dic['D']
+    if carlsen_score > chef_score:
+        print(60*x)
+    else:
+        print(40*x)
+        
+   
